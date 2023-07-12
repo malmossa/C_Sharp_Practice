@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.WebSockets;
+using System.Security.Cryptography;
 
 namespace Practice
 {
@@ -6,7 +8,12 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello");
+
+      /* String concatenation plus operator */
+      string message = "Hello " + "Mansor";
+
+      Console.WriteLine(message);
+
     }
   }
 }
