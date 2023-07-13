@@ -5,12 +5,24 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            string name = "mansor";
-            Console.WriteLine($"Hello! {name.ToUpper()}");
+
+            // a simpler way to iterate over an array, but it's less flexible
+            string[] cars = {"Tesla", "Mustang", "Corvette"};
+
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+            }
+
+            
+
+            
 
 
             Console.ReadLine();
 
     }
   }
+
+    
 }
