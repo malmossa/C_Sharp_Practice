@@ -1,18 +1,15 @@
-﻿using System;
-using System.Net.WebSockets;
-using System.Security.Cryptography;
-
+﻿
 namespace Practice
 {
   class Program
   {
     static void Main(string[] args)
     {
+            string name = "mansor";
+            Console.WriteLine($"Hello! {name.ToUpper()}");
 
-      /* String concatenation plus operator */
-      string message = "Hello " + "Mansor";
 
-      Console.WriteLine(message);
+            Console.ReadLine();
 
     }
   }
