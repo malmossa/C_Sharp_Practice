@@ -5,23 +5,17 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            // Method with return value
-            string FirstName()
-            {
-                return "Mansor";
-            }
-
-            // Methods without a return value
-            void LastName()
-            {
-                Console.WriteLine("Almossa");
-            }
-
-            string firstName = FirstName();
-
-            Console.WriteLine(firstName);
-            LastName();
             
+           void PrintOnTheConsole(string message = "Hey", int times = 3)
+            {
+                for (int i = 0; i < times; i++)
+                {
+                    Console.WriteLine(message);
+                }
+            }
+
+            PrintOnTheConsole();
+
             Console.ReadLine();
 
     }
