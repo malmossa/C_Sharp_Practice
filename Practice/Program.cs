@@ -5,15 +5,26 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            string firstName = "mansor";
+            // Method with return value
+            string FirstName()
+            {
+                return "Mansor";
+            }
 
-            Console.WriteLine($"The length {firstName} is {firstName.Length}");
+            // Methods without a return value
+            void LastName()
+            {
+                Console.WriteLine("Almossa");
+            }
 
+            string firstName = FirstName();
 
+            Console.WriteLine(firstName);
+            LastName();
+            
             Console.ReadLine();
 
     }
   }
-
-    
+ 
 }
