@@ -7,17 +7,18 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            int num1 = 5;
 
-            void Double(ref int n )
-                {
-                    n *= 2;
-                    Console.WriteLine($"The value inside the method is " + n);
-                }
+            Tuple<int, string> tuple1 = new Tuple<int, string>( 99, "Mansor");
+            Tuple<int, string, int> tuple2 = new Tuple<int, string, int>(50, "Mansor", 21);
 
-            Console.WriteLine("The value outside of the method is " + num1);
-            Double(ref num1);
-            Console.WriteLine("The value outside of the method is " + num1);
+            // OR
+
+            var tuple3 = (1, 2, "Almossa");
+
+
+            Console.WriteLine(tuple1.Item1);
+            Console.WriteLine(tuple2.Item2);
+            Console.WriteLine(tuple3.Item3);
 
 
 
