@@ -1,33 +1,30 @@
 ﻿
+using System.Threading.Channels;
+
 namespace Practice
 {
   class Program
   {
     static void Main(string[] args)
     {
-            double total1 = Checkout(3.99, 5.75, 15);
-            double total2 = Checkout(3.99, 5.75);
-            double total3 = Checkout(3.99, 5.75, 1.99, 100);
+            int num1 = 5;
 
-            Console.WriteLine(total1);
-            Console.WriteLine(total2);
-            Console.WriteLine(total3);
+            void Double(ref int n )
+                {
+                    n *= 2;
+                    Console.WriteLine($"The value inside the method is " + n);
+                }
+
+            Console.WriteLine("The value outside of the method is " + num1);
+            Double(ref num1);
+            Console.WriteLine("The value outside of the method is " + num1);
+
+
 
             Console.ReadLine();
 
     }
-
-    static double Checkout(params double[] prices)
-    {
-            double total = 0;
-
-            foreach (double price in prices)
-            {
-                total += price;
-            }
-
-            return total;
-    }
+   
   }
  
 }
