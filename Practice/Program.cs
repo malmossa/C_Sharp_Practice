@@ -7,20 +7,21 @@ namespace Practice
   {
     static void Main(string[] args)
     {
+                    
+            // receive int and output string
+            Func<int, string> receiveIntReturnsString;
 
-            int Sum(int a, int b)
+            string GetNameOfTheMonth(int month)
             {
-                return a + b;
+                DateTime date = new DateTime(2023, month, 1);
+                return date.ToString("MMMM");
             }
-            
-            // with lambda expression
-            int Sum2 (int a, int b) => a + b;
 
+            receiveIntReturnsString = GetNameOfTheMonth;
 
+            string february = receiveIntReturnsString(2);
+            Console.WriteLine(february);
 
-
-            Sum(1, 1);
-            Sum2(1, 1);
 
             Console.ReadLine();
 
