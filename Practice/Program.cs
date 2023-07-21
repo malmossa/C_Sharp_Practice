@@ -7,20 +7,17 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-                    
-            // receive int and output string
-            Func<int, string> receiveIntReturnsString;
-
-            string GetNameOfTheMonth(int month)
+            void Process(Action action)
             {
-                DateTime date = new DateTime(2023, month, 1);
-                return date.ToString("MMMM");
+                Console.WriteLine("Before executing the method");
+                action();
+                Console.WriteLine("After executing the method");
             }
 
-            receiveIntReturnsString = GetNameOfTheMonth;
-
-            string february = receiveIntReturnsString(2);
-            Console.WriteLine(february);
+            Process(()=>
+            {
+                Console.WriteLine(DateTime.Now);
+            });
 
 
             Console.ReadLine();
