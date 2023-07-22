@@ -1,5 +1,4 @@
 ﻿
-using System.Threading.Channels;
 
 namespace Practice
 {
@@ -7,22 +6,23 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            void Process(Action action)
-            {
-                Console.WriteLine("Before executing the method");
-                action();
-                Console.WriteLine("After executing the method");
-            }
+            Car car1 = new Car();
+            car1.Brand = "Toyota";
+            car1.Year = 2022;
 
-            Process(()=>
-            {
-                Console.WriteLine(DateTime.Now);
-            });
+            Car car2 = new Car();
+            car2.Brand = "Honda";
+            car2.Year = 1999;
+
+
+            Console.WriteLine($"First car: {car1.Brand}, {car1.Year}");
+            Console.WriteLine($"Second car: {car2.Brand}, {car2.Year}");
+            
 
 
             Console.ReadLine();
 
-    }
+        }
    
   }
  
