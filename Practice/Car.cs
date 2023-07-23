@@ -1,25 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Practice
 {
     internal class Car
-    {
+    {   
         // Fields
         private string? _brand;
-        private int _year;
-
+        private int _speed;
+        
+        
+        // Constructors
+        internal Car() 
+        {
+            Console.WriteLine("Instantiation a car");
+        }
+        
+        
         // Properties
         internal string? Brand
         {
-            get { return _brand!.ToUpper(); }
+            get { return _brand; }
             set { _brand = value; }
         }
 
-        // Auto-implemeted property
-        internal int Year { get; set; } = 1990;
+        internal int Speed
+        {
+            get { return _speed; }
+            set { _speed = value; }
+        }
+
+        // Methods
+        internal void Accelerate()
+        {
+            _speed++;
+        }
     }
 }
