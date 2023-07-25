@@ -1,37 +1,18 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Practice
 {
     internal class Car
-    {   
-        // Fields
-        private string? _brand;
-        private int _speed;
-        
-        
-        // Constructors
-        internal Car() 
-        {
-            Console.WriteLine("Instantiation a car");
-        }
-        
-        
-        // Properties
-        internal string? Brand
-        {
-            get { return _brand; }
-            set { _brand = value; }
-        }
+    {
+        private string _model;
 
-        internal int Speed
+        internal Car( string model )
         {
-            get { return _speed; }
-            set { _speed = value; }
-        }
-
-        // Methods
-        internal void Accelerate()
-        {
-            _speed++;
+            _model = model;
         }
     }
 }
