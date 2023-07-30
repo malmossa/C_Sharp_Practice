@@ -5,22 +5,26 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            Random random = new Random();
-            int randomNumber = random.Next();
+            int counter = 0;
 
-            if(randomNumber % 2 == 0)
+            do 
             {
-                Console.WriteLine($"The random number {randomNumber} is even");
-            } else
-            {
-                Console.WriteLine($"The random number {randomNumber} is odd");
-            }
+                Console.WriteLine(counter);
+                counter++; 
+
+                if(counter == 5)
+                {
+                    break;
+                }
+            } while (counter < 10);
 
 
 
             Console.ReadLine();
 
     }
+
+    
    
   }
  
