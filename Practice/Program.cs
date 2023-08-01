@@ -5,18 +5,18 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            int counter = 0;
-
-            do 
+            for (int i = 0; i < 100; i++) 
             {
-                Console.WriteLine(counter);
-                counter++; 
-
-                if(counter == 5)
+                if (i == 10)
                 {
-                    break;
+                    goto LoopEscape;
                 }
-            } while (counter < 10);
+
+                Console.WriteLine(i);
+            }
+
+            LoopEscape:
+            Console.WriteLine("Loop is Escaped!");
 
 
 
