@@ -5,18 +5,16 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            for (int i = 0; i < 100; i++) 
+            bool answer = false;
+
+            if (answer)
             {
-                if (i == 10)
-                {
-                    goto LoopEscape;
-                }
-
-                Console.WriteLine(i);
+                Console.WriteLine($"The answer is: {answer}");
             }
-
-            LoopEscape:
-            Console.WriteLine("Loop is Escaped!");
+            else
+            {
+                Console.WriteLine($"The answer is: {answer}");
+            }
 
 
 
