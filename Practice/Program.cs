@@ -5,16 +5,10 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            bool answer = false;
+            Console.WriteLine("Hi, what is your name? ");
+            string name = Console.ReadLine();
 
-            if (answer)
-            {
-                Console.WriteLine($"The answer is: {answer}");
-            }
-            else
-            {
-                Console.WriteLine($"The answer is: {answer}");
-            }
+            Console.WriteLine($"Hello {name}.");
 
 
 
