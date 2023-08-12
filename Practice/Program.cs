@@ -5,30 +5,32 @@ namespace Practice
   {
     static void Main(string[] args)
     {
-            // this is a statement
-            Console.WriteLine("Hello, World!"); 
 
-            // this is a multiple statements
-            Console.WriteLine("My name is mansor.");
-            Console.WriteLine("I love to code.");
+            //string username; // Declaring a variable
+            //username = Console.ReadLine(); // Assigning a value to a variable
+            //Console.WriteLine("Hi " + username); // Retrieving its current value
 
-            // Whitespace
-            Console.WriteLine
-                ("Hello, World!"            );
+            //int score;
+            //score = 0; // 0 is an int literal
+            //score = 5; // assign different values
 
-            // this is an expression
-            Console.WriteLine("Hi, " + "my name is mansor");
+            //Console.WriteLine(score);
 
-            // variable
-            string name; // declaring
-            name = "mansor"; // assignment
-            Console.WriteLine("Hi " + name);
+            //int x = 0;
 
-            // reading text from the console
-            string myName;
-            Console.WriteLine("What is your name?");
-            myName = Console.ReadLine();
-            Console.WriteLine("Hi " + myName);
+            //Console.WriteLine(x);
+
+            int a, b, c;
+            a = b = c = 10;
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+
+
+
+
+
 
 
 
