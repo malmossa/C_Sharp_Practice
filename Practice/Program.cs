@@ -6,26 +6,17 @@ namespace Practice
     static void Main(string[] args)
     {
 
-            //string username; // Declaring a variable
-            //username = Console.ReadLine(); // Assigning a value to a variable
-            //Console.WriteLine("Hi " + username); // Retrieving its current value
+            double number1 = 3.5623;
+            float number2 = 3.5623f; // add f at the end
+            decimal number3 = 3.5623m; // add m at the end
 
-            //int score;
-            //score = 0; // 0 is an int literal
-            //score = 5; // assign different values
+            double number4 = 6.022e23;
 
-            //Console.WriteLine(score);
 
-            //int x = 0;
-
-            //Console.WriteLine(x);
-
-            int a, b, c;
-            a = b = c = 10;
-
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.WriteLine(c);
+            Console.WriteLine(number1);
+            Console.WriteLine(number2);
+            Console.WriteLine(number3);
+            Console.WriteLine(number4);
 
 
 
