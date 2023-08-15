@@ -6,17 +6,12 @@ namespace Practice
     static void Main(string[] args)
     {
 
-            double number1 = 3.5623;
-            float number2 = 3.5623f; // add f at the end
-            decimal number3 = 3.5623m; // add m at the end
-
-            double number4 = 6.022e23;
+            var message = "Hello, World!"; // it will compile
+            var name; // it will not compile
 
 
-            Console.WriteLine(number1);
-            Console.WriteLine(number2);
-            Console.WriteLine(number3);
-            Console.WriteLine(number4);
+            
+            Console.WriteLine(message);
 
 
 
