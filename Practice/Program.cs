@@ -6,20 +6,10 @@ namespace Practice
     static void Main(string[] args)
     {
 
-            var message = "Hello, World!"; // it will compile
-            var name; // it will not compile
+            int result = ((2 + 1) * 8 - (3 * 2) * 2) / 4;
 
 
-            
-            Console.WriteLine(message);
-
-
-
-
-
-
-
-
+            Console.WriteLine(result);
 
             Console.ReadLine();
 
