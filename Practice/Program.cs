@@ -6,10 +6,17 @@ namespace Practice
     static void Main(string[] args)
     {
 
-            int result = ((2 + 1) * 8 - (3 * 2) * 2) / 4;
+            int aBigNumber = int.MaxValue;
+            short aBigNegativeNumber = short.MinValue;
+            double infinity = double.PositiveInfinity;
+            double notAnyRealNumber = double.NaN;
+
+            Console.WriteLine(aBigNumber);
+            Console.WriteLine(aBigNegativeNumber);
+            Console.WriteLine(infinity);
+            Console.WriteLine(notAnyRealNumber);
 
 
-            Console.WriteLine(result);
 
             Console.ReadLine();
 
