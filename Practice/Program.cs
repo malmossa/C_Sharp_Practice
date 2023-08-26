@@ -7,21 +7,27 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            /* Homework: Create a Console Application 
-               that has variables to hold a person's name, age,
-               if they are alive, and their phone number. */
+            Console.Write("What is your first name? ");
+            string firstName = Console.ReadLine();
 
-            string name = "Mansor";
-            string phoneNumber = "62662942255";
-            int age = 50;
-            bool isAlive = true;
+            switch(firstName.ToLower())
+            {
+                case "mansor":
+                    Console.WriteLine("Hello, Mansor");
+                    break;
+                case "nujood":
+                    Console.WriteLine("Hello, Nujood");
+                    break;
+                default:
+                    Console.WriteLine("Hello, there!");
+                    break;
+            }
 
-            Console.WriteLine($"Name: {name}.");
-            Console.WriteLine($"Age: {age}.");
-            Console.WriteLine($"Phone: {phoneNumber}.");
-            Console.WriteLine($"Is he alive: {isAlive}.");
 
 
+
+
+            
             Console.ReadLine();
         }
     }
