@@ -7,21 +7,21 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            Console.Write("What is your age? ");
-            string ageText = Console.ReadLine();
+            string continueResult = string.Empty;
 
-            bool isValidAge = int.TryParse(ageText, out int age);
+            do
+            {
+                Console.Write("What is your name? ");
+                string name = Console.ReadLine();
 
-            if(isValidAge == true)
-            {
-                age += 10;
-                Console.WriteLine($"You are going to be {age} years old in 10 years. ");
-            } else
-            {
-                Console.WriteLine("That was not a valid age!");
-            }
+                Console.WriteLine($"Hello {name}");
+
+                Console.Write("Do you want to continue (yes/no): ");
+                continueResult = Console.ReadLine();
+
+            } while (continueResult.ToLower() == "yes");
 
             Console.ReadLine();
         }
     }
-    }
+}
