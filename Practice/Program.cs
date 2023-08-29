@@ -7,48 +7,20 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            // Declaring a variable
-            int num1;
-            // Assigning a value to a variable
-            num1 = 13;
-            Console.WriteLine(num1);
+            // Print and keeps the cursor on the same line.
+            Console.Write("text here"); 
 
-            // Declaring and initializing a varible in one go
-            int num2 = 23;
-            Console.WriteLine(num2);
+            // Print and puts the cursor in the next line.
+            Console.WriteLine("text here"); 
 
-            //Declaring multiple varables at once
-            int num3, num4, num5;
-            num3 = 1;
-            num4 = 2;
-            num5 = 3;
-            Console.WriteLine(num3);
-            Console.WriteLine(num4);
-            Console.WriteLine(num5);
+            // Takes a single input of type string and it returns the ASCII value of the that input.
+            Console.Read(); 
 
-            // Double
-            double d1 = 3.1415;
-            double d2 = 5.1;
-            Console.WriteLine(d1);
-            Console.WriteLine(d2);
+            // Takes a string or integer input and returns it as the output value.
+            Console.ReadLine();
 
-            // Float
-            float f1 = 3.1315f;
-            float f2 = 5.1f;
-            Console.WriteLine(f1);
-            Console.WriteLine(f2);
-
-            // String
-            string name = "Mansor";
-            Console.WriteLine(name);
-
-            // Using string methods
-            string upperCaseName = name.ToUpper();
-            Console.WriteLine(upperCaseName);
-
-            // Using concatination
-            string message = "Hello there " + " my name is " + name;
-            Console.WriteLine(message);
+            // Takes a single input of type string and it returns the key info.
+            Console.ReadKey();
 
 
 
