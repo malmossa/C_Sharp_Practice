@@ -7,19 +7,51 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            string continueResult = string.Empty;
+            // Declaring a variable
+            int num1;
+            // Assigning a value to a variable
+            num1 = 13;
+            Console.WriteLine(num1);
 
-            do
-            {
-                Console.Write("What is your name? ");
-                string name = Console.ReadLine();
+            // Declaring and initializing a varible in one go
+            int num2 = 23;
+            Console.WriteLine(num2);
 
-                Console.WriteLine($"Hello {name}");
+            //Declaring multiple varables at once
+            int num3, num4, num5;
+            num3 = 1;
+            num4 = 2;
+            num5 = 3;
+            Console.WriteLine(num3);
+            Console.WriteLine(num4);
+            Console.WriteLine(num5);
 
-                Console.Write("Do you want to continue (yes/no): ");
-                continueResult = Console.ReadLine();
+            // Double
+            double d1 = 3.1415;
+            double d2 = 5.1;
+            Console.WriteLine(d1);
+            Console.WriteLine(d2);
 
-            } while (continueResult.ToLower() == "yes");
+            // Float
+            float f1 = 3.1315f;
+            float f2 = 5.1f;
+            Console.WriteLine(f1);
+            Console.WriteLine(f2);
+
+            // String
+            string name = "Mansor";
+            Console.WriteLine(name);
+
+            // Using string methods
+            string upperCaseName = name.ToUpper();
+            Console.WriteLine(upperCaseName);
+
+            // Using concatination
+            string message = "Hello there " + " my name is " + name;
+            Console.WriteLine(message);
+
+
+
 
             Console.ReadLine();
         }
