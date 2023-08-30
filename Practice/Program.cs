@@ -7,20 +7,30 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            // Print and keeps the cursor on the same line.
-            Console.Write("text here"); 
+            // Implcit convertion
+            int num = 12390532;
+            long bigNum = num;
 
-            // Print and puts the cursor in the next line.
-            Console.WriteLine("text here"); 
+            float myFloat = 13.37f;
+            double myNewDouble = myFloat;
 
-            // Takes a single input of type string and it returns the ASCII value of the that input.
-            Console.Read(); 
+            double myDouble = 13.37;
+            int myInt;
 
-            // Takes a string or integer input and returns it as the output value.
-            Console.ReadLine();
+            // Explicit convertion
+            // Cast double to int
+            myInt = (int)myDouble;
 
-            // Takes a single input of type string and it returns the key info.
-            Console.ReadKey();
+            // Type Convertion
+            string myString = myDouble.ToString(); // "13.37"
+            string myFloatString = myFloat.ToString();
+            bool sunIsShining = false;
+
+            string myBoolString = sunIsShining.ToString();
+
+
+
+            
 
 
 
