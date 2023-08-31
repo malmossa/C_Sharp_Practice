@@ -7,6 +7,7 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
+
             // Implcit convertion
             int num = 12390532;
             long bigNum = num;
@@ -23,15 +24,8 @@ namespace Practice
 
             // Type Convertion
             string myString = myDouble.ToString(); // "13.37"
-            string myFloatString = myFloat.ToString();
-            bool sunIsShining = false;
 
-            string myBoolString = sunIsShining.ToString();
-
-
-
-            
-
+            Console.WriteLine(myInt);
 
 
 
