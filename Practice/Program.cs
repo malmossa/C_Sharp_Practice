@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Practice
 {
@@ -6,40 +7,33 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            //bool boolFromString = bool.Parse("true");
-            //Console.WriteLine($"Data type: {boolFromString.GetType()}");
+            string myString = "This is a string";
 
-            //int intFromString = int.Parse("100");
-            //Console.WriteLine($"Data type: {intFromString.GetType()}");
+            Console.WriteLine($"String Length: { myString.Length}");
 
-            //double doubleFromString = double.Parse("1.234");
-            //Console.WriteLine($"Data type: {doubleFromString.GetType()}");
+            Console.WriteLine($"String Contains is: {myString.Contains("is")}");
 
-            //string stringValue = doubleFromString.ToString();
-            //Console.WriteLine($"Data type: {stringValue.GetType()}");
+            Console.WriteLine($"Index of is: {myString.IndexOf("is")}");
 
-            ///* Explicit convertion, becuse we are going to lose some data
-            // * like converting double to interger, we lose all decimal values*/
+            Console.WriteLine($"Remove String: {myString.Remove(10, 6)}");
 
-            //double doubleNumber = 12.345;
-            //Console.WriteLine($"Integer: {(int)doubleNumber}");
+            Console.WriteLine($"Insert String: {myString.Insert(10, "short ")}");
 
-            ///* Implicit convertion, when the smallest type is been converted
-            // * into a larger type, so no data is been lost */
-            //int intNumber = 10;
-            //Console.WriteLine($"Double: {(double)intNumber}");
+            Console.WriteLine($"Replace String: {myString.Replace("string", "sentence")}");
 
-            int myInt = 10;
-            double myDouble = 5.25;
-            bool myBool = true;
+            Console.WriteLine($"Compare A to B: {String.Compare("A", "B", StringComparison.OrdinalIgnoreCase)}");
 
-            Console.WriteLine(Convert.ToString(myInt)); // convert int to string
-            Console.WriteLine(Convert.ToDouble(myInt)); // convert int to double
-            Console.WriteLine(Convert.ToInt32(myDouble)); // convert double to int
-            Console.WriteLine(Convert.ToString(myBool)); // convert bool to string
+            Console.WriteLine($"A = a: {String.Equals("A", "a", StringComparison.OrdinalIgnoreCase)}");
 
+            Console.WriteLine($"Pad Left: {myString.PadLeft(20, '.')}");
 
+            Console.WriteLine($"Pad Right: {myString.PadRight(20, '.')}");
 
+            Console.WriteLine($"Trim: {myString.Trim()}");
+
+            Console.WriteLine($"Uppercase: {myString.ToUpper()}");
+
+            Console.WriteLine($"Lowercase: {myString.ToLower()}");
 
 
 
