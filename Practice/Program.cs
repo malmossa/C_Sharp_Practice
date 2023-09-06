@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 
 namespace Practice
 {
@@ -7,14 +6,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            string[] names = {"Mansor", "Nujood", "Mohammed"};
-            
-            for (int i = 0; i < names.Length; i++) 
-            {
-                Console.WriteLine(names[i]);
-            }
-
-
+            Console.Write("Hello World ");
+            Console.Write("I will print on the same line.");
 
 
 
@@ -22,3 +15,8 @@ namespace Practice
         }
     }
 }
+
+
+
+
+
