@@ -6,8 +6,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello World ");
-            Console.Write("I will print on the same line.");
+            // Good
+            int minutsPerHour = 60;
+
+            // not easy to understand what m actually is
+            int m = 60;
+
+            Console.WriteLine(minutsPerHour);
+            Console.WriteLine(m);
+
 
 
 
