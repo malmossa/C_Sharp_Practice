@@ -6,14 +6,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            // Good
-            int minutsPerHour = 60;
+            
+            bool boolFromString = bool.Parse("true");
+            int intFromString = int.Parse("100");
+            double doubleFromString = double.Parse("1.234");
 
-            // not easy to understand what m actually is
-            int m = 60;
+            Console.WriteLine(boolFromString);
+            Console.WriteLine(intFromString);
+            Console.WriteLine(doubleFromString);
 
-            Console.WriteLine(minutsPerHour);
-            Console.WriteLine(m);
 
 
 
