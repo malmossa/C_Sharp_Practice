@@ -6,14 +6,11 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            
-            bool boolFromString = bool.Parse("true");
-            int intFromString = int.Parse("100");
-            double doubleFromString = double.Parse("1.234");
 
-            Console.WriteLine(boolFromString);
-            Console.WriteLine(intFromString);
-            Console.WriteLine(doubleFromString);
+            int x = 10;
+            x += 10;
+
+            Console.WriteLine(x);
 
 
 
