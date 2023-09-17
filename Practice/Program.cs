@@ -7,20 +7,22 @@ namespace Practice
         static void Main(string[] args)
         {
 
-            int i = 0;
+            int[] myNumbers = { 5, 1, 8, 9 };
+            Console.WriteLine(myNumbers.Max());  // returns the largest value
+            Console.WriteLine(myNumbers.Min());  // returns the smallest value
+            Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
 
-            while(i < 10)
-            {
-                if(i == 4)
-                {
-                    i++;
-                    continue;
-                }
-                Console.WriteLine(i);
-                i++;
-            }
-            
-            
+
+
+
+
+
+
+
+
+
+
+
 
 
 
