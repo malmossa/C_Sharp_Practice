@@ -7,40 +7,24 @@ namespace Practice
         static void Main(string[] args)
         {
 
-            int[] myNumbers = { 5, 1, 8, 9 };
-            Console.WriteLine(myNumbers.Max());  // returns the largest value
-            Console.WriteLine(myNumbers.Min());  // returns the smallest value
-            Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+            int num1 = AddTwoNumbers(5, 5);
+            double num2 = AddTwoNumbers(1.99, 1.99);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine(num1);
+            Console.WriteLine(num2);
 
             Console.ReadLine();
+        }
+
+       
+        static int AddTwoNumbers(int x, int y)
+        {
+            return x + y;
+        }
+
+        static double AddTwoNumbers(double x, double y)
+        {
+            return x + y;
         }
     }
 }
