@@ -6,27 +6,21 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            Car car1 = new Car();
 
-            int num1 = AddTwoNumbers(5, 5);
-            double num2 = AddTwoNumbers(1.99, 1.99);
+            car1.color = "Black";
+            car1.maxSpeed = 100;
 
-            Console.WriteLine(num1);
-            Console.WriteLine(num2);
+            Console.WriteLine(car1.color);
+            Console.WriteLine(car1.maxSpeed);
+
 
             Console.ReadLine();
         }
 
-       
-        static int AddTwoNumbers(int x, int y)
-        {
-            return x + y;
-        }
 
-        static double AddTwoNumbers(double x, double y)
-        {
-            return x + y;
-        }
     }
+ 
 }
 
 
