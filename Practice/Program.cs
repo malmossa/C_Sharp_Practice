@@ -6,18 +6,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car car1 = new Car();
+            Car Ford = new Car("Mustang", "Red", 1969);
 
-            car1.color = "Black";
-            car1.maxSpeed = 100;
-
-            Console.WriteLine(car1.color);
-            Console.WriteLine(car1.maxSpeed);
+            Console.WriteLine(Ford.model);
+            Console.WriteLine(Ford.color);
+            Console.WriteLine(Ford.year);
 
 
             Console.ReadLine();
         }
-
 
     }
  

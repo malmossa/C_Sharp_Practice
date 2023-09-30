@@ -3,7 +3,6 @@ C:\Users\malmo\C_Sharp_Practice\Practice\bin\Debug\net7.0\Practice.deps.json
 C:\Users\malmo\C_Sharp_Practice\Practice\bin\Debug\net7.0\Practice.runtimeconfig.json
 C:\Users\malmo\C_Sharp_Practice\Practice\bin\Debug\net7.0\Practice.dll
 C:\Users\malmo\C_Sharp_Practice\Practice\bin\Debug\net7.0\Practice.pdb
-C:\Users\malmo\C_Sharp_Practice\Practice\obj\Debug\net7.0\Practice.csproj.AssemblyReference.cache
 C:\Users\malmo\C_Sharp_Practice\Practice\obj\Debug\net7.0\Practice.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\malmo\C_Sharp_Practice\Practice\obj\Debug\net7.0\Practice.AssemblyInfoInputs.cache
 C:\Users\malmo\C_Sharp_Practice\Practice\obj\Debug\net7.0\Practice.AssemblyInfo.cs
