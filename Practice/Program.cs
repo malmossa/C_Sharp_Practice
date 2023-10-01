@@ -6,16 +6,27 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car Ford = new Car("Mustang", "Red", 1969);
+            Person myObj = new Person();
+            myObj.Name = "Mansor";
 
-            Console.WriteLine(Ford.model);
-            Console.WriteLine(Ford.color);
-            Console.WriteLine(Ford.year);
-
+            Console.WriteLine(myObj.Name);
 
             Console.ReadLine();
         }
 
+    }
+
+
+    class Person
+    {
+        private string name; // field
+
+        public string Name // property
+        {
+            get { return name; } // get method
+            set { name = value; } // set method
+
+        }
     }
  
 }
