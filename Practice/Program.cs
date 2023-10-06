@@ -2,33 +2,34 @@
 
 namespace Practice
 {
-    public class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Person myObj = new Person();
-            myObj.Name = "Mansor";
+            int intNumber = 123;
+            long longNumber = 150_000_000_00;
+            float floatNumber = 5.75f; // we add (f) at the end
+            double doubleNumber = 19.99;
+            decimal decimalNumber = 23.123456789000000000m; // we add (m) at the end
+            bool isAlive = true;
+            char myGrade = 'A';
+            string greeting = "Hello world!";
 
-            Console.WriteLine(myObj.Name);
+            Console.WriteLine(intNumber);
+            Console.WriteLine(longNumber);
+            Console.WriteLine(floatNumber);
+            Console.WriteLine(doubleNumber);
+            Console.WriteLine(decimalNumber);
+            Console.WriteLine(isAlive);
+            Console.WriteLine(myGrade);
+            Console.WriteLine(greeting);
+
+
+
 
             Console.ReadLine();
         }
-
     }
-
-
-    class Person
-    {
-        private string name; // field
-
-        public string Name // property
-        {
-            get { return name; } // get method
-            set { name = value; } // set method
-
-        }
-    }
- 
 }
 
 
