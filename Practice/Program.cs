@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 
 namespace Practice
 {
@@ -7,30 +6,32 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            // validating numbers input
-            Console.Write("What is your age? ");
-            string userInput = Console.ReadLine();
-            bool isUserInputValid = int.TryParse(userInput, out int age);
+            int number1 = 5;
+            int number2 = 5;
 
-            if(isUserInputValid )
-            {
-                Console.WriteLine($"Your age is {age}");
-            } else
-            {
-                Console.WriteLine("Sorry, invalid input!");
-            }
+            // unary +
+            Console.WriteLine(+number1);
 
+            // unary -
+            Console.WriteLine(-number1);
 
+            // increment ++ by one
+            Console.WriteLine(++number2);
 
-
+            // derement -- by one 
+            Console.WriteLine(--number2);
 
 
+
+            
 
 
             Console.ReadLine();
+
         }
     }
 }
+
 
 
 
