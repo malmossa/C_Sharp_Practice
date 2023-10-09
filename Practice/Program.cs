@@ -5,23 +5,16 @@ namespace Practice
     internal class Program
     {
         static void Main(string[] args)
-        {        
-           
-            string fullName = "Mansor Almossa";
+        {
+            string name = "";
 
-            Console.WriteLine($"Hello Mr. {fullName.Substring(7, 7)}");
+            while (name == "")
+            {
+                Console.Write("Enter your name: ");
+                name = Console.ReadLine();             
+            }
 
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine($"Hello {name}");
 
 
 
