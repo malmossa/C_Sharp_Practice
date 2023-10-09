@@ -6,17 +6,16 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            string name = "";
 
-            while (name == "")
+            for (int i = 0; i <= 10; i++)
             {
-                Console.Write("Enter your name: ");
-                name = Console.ReadLine();             
+                if(i == 5)
+                {
+                    continue;
+                }
+
+                Console.WriteLine(i);
             }
-
-            Console.WriteLine($"Hello {name}");
-
-
 
 
 
