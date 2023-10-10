@@ -6,17 +6,23 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            Console.Write("How many rows: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i <= 10; i++)
+            Console.Write("How many columns: ");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("What symbol:");
+            string symbol = Console.ReadLine();
+
+            for(int i = 0; i < rows; i++)
             {
-                if(i == 5)
+                for(int j = 0; j < columns; j++)
                 {
-                    continue;
+                    Console.Write(symbol);
                 }
-
-                Console.WriteLine(i);
+                Console.WriteLine();
             }
-
 
 
             Console.ReadLine();
