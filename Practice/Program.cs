@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace Practice
 {
@@ -6,26 +8,31 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.Write("How many rows: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
+            List<Player> players = new List<Player>();
 
-            Console.Write("How many columns: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
+            Player player1 = new Player("Chad");
+            Player player2 = new Player("Steve");
+            Player player3 = new Player("Karen");
 
-            Console.Write("What symbol:");
-            string symbol = Console.ReadLine();
+            players.Add(player1);
+            players.Add(player2);
+            players.Add(player3);
 
-            for(int i = 0; i < rows; i++)
+            foreach(Player player in players)
             {
-                for(int j = 0; j < columns; j++)
-                {
-                    Console.Write(symbol);
-                }
-                Console.WriteLine();
+                Console.WriteLine(player.username);
             }
 
-
             Console.ReadLine();
+        }
+        class Player
+        {
+            public string username;
+
+            public Player(string username)
+            {
+                this.username = username;
+            }
         }
     }
 }
