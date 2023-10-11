@@ -8,26 +8,39 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            double customer1 = Checkout(3.99, 5.75, 1.5);
-            double customer2 = Checkout(10.99, 6.50, 1.99, 10, 27.99);
+            int x;
+            int y;
+            int result;
 
-            Console.WriteLine(customer1);
-            Console.WriteLine(customer2);
+            try
+            {
+                Console.Write("Enter number 1: ");
+                x = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter number 2: ");
+                y = Convert.ToInt32(Console.ReadLine());
+
+                result = x / y;
+
+            } catch (FormatException e)
+            {
+                Console.WriteLine("Enter only numbers please!");
+            } catch (DivideByZeroException e)
+            {
+                Console.WriteLine("You can't divide by zero! IDIOT!!");
+            } catch (Exception e) // catch anyting else
+            {
+                Console.WriteLine("Something went wrong!");
+            } finally 
+            {
+                Console.WriteLine("Thanks for visiting!");
+            }
+            
 
             Console.ReadLine();
         }
 
-        static double Checkout(params double[] prices)
-        {
-            double total = 0;
-
-            foreach(double price in prices)
-            {
-                total += price;
-            }
-            return total;
-        }
-        
+              
     }
 }
 
