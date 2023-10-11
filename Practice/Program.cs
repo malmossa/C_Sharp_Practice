@@ -8,32 +8,26 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            List<Player> players = new List<Player>();
+            double customer1 = Checkout(3.99, 5.75, 1.5);
+            double customer2 = Checkout(10.99, 6.50, 1.99, 10, 27.99);
 
-            Player player1 = new Player("Chad");
-            Player player2 = new Player("Steve");
-            Player player3 = new Player("Karen");
-
-            players.Add(player1);
-            players.Add(player2);
-            players.Add(player3);
-
-            foreach(Player player in players)
-            {
-                Console.WriteLine(player.username);
-            }
+            Console.WriteLine(customer1);
+            Console.WriteLine(customer2);
 
             Console.ReadLine();
         }
-        class Player
-        {
-            public string username;
 
-            public Player(string username)
+        static double Checkout(params double[] prices)
+        {
+            double total = 0;
+
+            foreach(double price in prices)
             {
-                this.username = username;
+                total += price;
             }
+            return total;
         }
+        
     }
 }
 
