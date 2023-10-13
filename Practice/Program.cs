@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace Practice
@@ -8,9 +9,16 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Messages.Hello();
-            Messages.Waiting();
-            Messages.buy();
+            // declar a dictionary
+            Dictionary<int, string> superHeroes = new Dictionary<int, string>();
+
+            // add to a dictionary
+            superHeroes.Add(1, "Superman");
+            superHeroes.Add(2, "Batman");
+            superHeroes.Add(3, "The Flash");           
+        
+            
+
 
             Console.ReadLine();
         }
