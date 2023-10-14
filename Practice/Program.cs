@@ -9,22 +9,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            // declar a dictionary
-            Dictionary<int, string> superHeroes = new Dictionary<int, string>();
 
-            // add to a dictionary
-            superHeroes.Add(1, "Superman");
-            superHeroes.Add(2, "Batman");
-            superHeroes.Add(3, "The Flash");           
-        
-            
-
-
+            Console.WriteLine("Hello mansor almossa");
             Console.ReadLine();
         }
 
+        
            
     }
+
 
     
 }
