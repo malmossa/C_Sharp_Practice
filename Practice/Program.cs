@@ -5,16 +5,25 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Pizza pizza1 = new Pizza("stuffed crust", "red sauce", "mozzarella", "pepperoni");
-            Pizza pizza2 = new Pizza("stuffed crust", "red sauce", "mozzarella");
-            
+            Vehicle car = new Vehicle();
            
+          
             Console.ReadLine();
 
         }
-                       
+
+        abstract class Vehicle
+        {
+            internal int speed = 0;
+
+            internal void go()
+            {
+                Console.WriteLine("This vehicle is moving!");
+            }
+        }
+                 
     }
-    
+
 }
 
 
