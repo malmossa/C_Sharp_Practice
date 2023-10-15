@@ -1,24 +1,33 @@
 ﻿
+using System.Net.Http.Headers;
+
 namespace Practice
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Vehicle car = new Vehicle();
-           
-          
+                                 
+            // declare the array and add objects in one step
+            Car[] garage = { new Car("Mustang"), new Car("Corvette"), new Car("Lambo") };
+
+            foreach(Car car in garage)
+            {
+                Console.WriteLine(car.model);
+            }
+
+
             Console.ReadLine();
 
         }
 
-        abstract class Vehicle
+        class Car
         {
-            internal int speed = 0;
+            internal string model;
 
-            internal void go()
+            internal Car(string model)
             {
-                Console.WriteLine("This vehicle is moving!");
+                this.model = model;
             }
         }
                  
