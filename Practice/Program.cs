@@ -7,41 +7,29 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Car car = new Car();
-            Bicycle bicycle = new Bicycle();
+            int[] intArray = { 1, 2, 3, 4, 5, };
+            double[] doubleArray = { 1.0, 2.0, 3.0};
+            string[] stringArray = { "1", "2", "3"};
 
-            Vehicle[] vehicles = { car, bicycle};
-
-            foreach (Vehicle vehicle in vehicles)
-            {
-                vehicle.Go();
-            }
+            displayElements(intArray);
+            displayElements(doubleArray);
+            displayElements(stringArray);
 
             Console.ReadLine();
 
         }
 
-        class Vehicle
+        
+        internal static void displayElements<T>(T[] array)
         {
-            internal virtual void Go() { }
-        }
-
-        class Car : Vehicle 
-        {
-            internal override void Go()
+            foreach(T item in array)
             {
-                Console.WriteLine("The car is moving!");
+                Console.Write(item + " ");
             }
-
+            Console.WriteLine();
         }
 
-        class Bicycle : Vehicle 
-        {
-            internal override void Go()
-            {
-                Console.WriteLine("The bicycle is moving!");
-            }
-        }
+        
                  
     }
 
