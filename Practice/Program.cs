@@ -1,5 +1,5 @@
-﻿
-using System.Net.Http.Headers;
+﻿using System;
+using System.Threading;
 
 namespace Practice
 {
@@ -7,32 +7,16 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            int[] intArray = { 1, 2, 3, 4, 5, };
-            double[] doubleArray = { 1.0, 2.0, 3.0};
-            string[] stringArray = { "1", "2", "3"};
 
-            displayElements(intArray);
-            displayElements(doubleArray);
-            displayElements(stringArray);
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+                Thread.Sleep(1000); // it will delay for 1 second.
+            }
 
             Console.ReadLine();
-
-        }
-
-        
-        internal static void displayElements<T>(T[] array)
-        {
-            foreach(T item in array)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
-        }
-
-        
-                 
+        }        
     }
-
 }
 
 
