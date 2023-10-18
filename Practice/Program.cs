@@ -7,15 +7,33 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            Score user1 = new("Mansor", 12420, 15);
+           
 
-            for (int i = 0; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-                Thread.Sleep(1000); // it will delay for 1 second.
-            }
+            
+
+           
 
             Console.ReadLine();
-        }        
+        }
+        
+        class Score
+        {
+            public string _name;
+            public int _points;
+            public int _level;
+
+            
+
+            public Score(string name, int points, int level)
+            {
+                _name = name;
+                _points = points;
+                _level = level;
+            }
+
+           
+        }
     }
 }
 
