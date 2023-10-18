@@ -7,8 +7,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Score user1 = new("Mansor", 12420, 15);
-           
+                    
 
             
 
@@ -16,24 +15,26 @@ namespace Practice
 
             Console.ReadLine();
         }
-        
-        class Score
+
+
+        class Rectangle
         {
-            public string _name;
-            public int _points;
-            public int _level;
-
-            
-
-            public Score(string name, int points, int level)
+            private float _width;
+            private float _height;
+           
+            public Rectangle(float width, float height)
             {
-                _name = name;
-                _points = points;
-                _level = level;
+                _width = width;
+                _height = height;             
             }
 
-           
+            public float Width
+            {
+                get { return _width;}
+                set { _width = value; }
+            }
         }
+              
     }
 }
 
