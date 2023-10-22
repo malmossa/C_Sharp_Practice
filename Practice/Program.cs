@@ -41,6 +41,11 @@ namespace Practice
         {
             return Width * Height;
         }
+
+        public static void SayHello()
+        {
+            Console.WriteLine("Hello");
+        }
     }
 }
 
