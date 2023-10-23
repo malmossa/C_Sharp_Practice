@@ -6,47 +6,30 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Rectangle rectangle1 = new Rectangle(5, 10);
-           
-            Console.WriteLine($"Width is {rectangle1.Width}");
-            Console.WriteLine($"Height is {rectangle1.Height}");
-            Console.WriteLine($"Area is {rectangle1.CalculateArea()}");
-            Console.WriteLine($"Circumference is {rectangle1.CalculateCircumference()}");
-           
+            List<User> users = new List<User>();
+
+            User user1 = new User("Bob", "Smith", 30);        
+            User user2 = new User("Darren", "Smith", 50);
+
+            users.Add(user1);
+            users.Add(user2);
+
+            foreach(User user in users)
+            {
+                Console.WriteLine($"First Name: {user._firstName}");
+                Console.WriteLine($"Last Name: {user._lastName}");
+                Console.WriteLine($"Age: {user._age}");
+                Console.WriteLine($"Retired: {user.IsRetired()}");
+                Console.WriteLine();
+            }
+            
+
             Console.ReadLine();
         }
 
     }
 
-    class Rectangle
-    {
-        // fields
-        public int Width;
-        public int Height;
-
-        // constructor
-        public Rectangle(int width, int height)
-        {
-            Width = width;
-            Height = height;
-        }
-
-        // methods
-        public int CalculateCircumference()
-        {
-            return 2 * Width + 2 * Height;
-        }
-
-        public int CalculateArea()
-        {
-            return Width * Height;
-        }
-
-        public static void SayHello()
-        {
-            Console.WriteLine("Hello");
-        }
-    }
+    
 }
 
 
