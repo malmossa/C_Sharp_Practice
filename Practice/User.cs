@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    internal class User
+    class User
     {
-        internal string _firstName;
-        internal string _lastName;
-        internal int _age;
+        private string _firstName;
+        private string _lastName;
+        private int _age;
 
         internal User(string firstName, string lastName, int age)
         {

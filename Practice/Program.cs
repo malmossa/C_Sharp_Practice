@@ -22,7 +22,11 @@ namespace Practice
                 Console.WriteLine($"Retired: {user.IsRetired()}");
                 Console.WriteLine();
             }
+
+            Guid id = Guid.NewGuid();
+            Console.WriteLine(id.ToString());
             
+
 
             Console.ReadLine();
         }
