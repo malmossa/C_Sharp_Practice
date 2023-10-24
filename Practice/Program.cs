@@ -6,26 +6,12 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            List<User> users = new List<User>();
+            VideoGame game1 = new VideoGame("World of Warcraft", "Blizzard", "Teen");
+            VideoGame game2 = new VideoGame("League of Legends", "Riot Games", "Teen");
+            VideoGame game3 = new VideoGame("Grand Theft Auto V", "Rockstar Games", "Adultts only 18");
+            VideoGame game4 = new VideoGame("Minecraft", "Mojang Studios", "10+");
 
-            User user1 = new User("Bob", "Smith", 30);        
-            User user2 = new User("Darren", "Smith", 50);
-
-            users.Add(user1);
-            users.Add(user2);
-
-            foreach(User user in users)
-            {
-                Console.WriteLine($"First Name: {user._firstName}");
-                Console.WriteLine($"Last Name: {user._lastName}");
-                Console.WriteLine($"Age: {user._age}");
-                Console.WriteLine($"Retired: {user.IsRetired()}");
-                Console.WriteLine();
-            }
-
-            Guid id = Guid.NewGuid();
-            Console.WriteLine(id.ToString());
-            
+            Console.WriteLine(game1.name);
 
 
             Console.ReadLine();
