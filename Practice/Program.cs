@@ -6,16 +6,37 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            VideoGame game1 = new VideoGame("World of Warcraft", "Blizzard", "Teen");
-            VideoGame game2 = new VideoGame("League of Legends", "Riot Games", "Teen");
-            VideoGame game3 = new VideoGame("Grand Theft Auto V", "Rockstar Games", "Adultts only 18");
-            VideoGame game4 = new VideoGame("Minecraft", "Mojang Studios", "10+");
+            ChestState currentState = ChestState.Locked;
 
-            Console.WriteLine(game1.name);
+            while (true)
+            {
+                Console.Write($"The chest is {currentState}. What do you want to do? ");
+                string userInput = Console.ReadLine();
 
+                if(currentState == ChestState.Locked && userInput == "unlock") 
+                {
+                    currentState = ChestState.Closed;
+                }
 
-            Console.ReadLine();
+                if(currentState == ChestState.Closed && userInput == "open")
+                {
+                    currentState = ChestState.Open;
+                }
+
+                if(currentState == ChestState.Open && userInput == "close") 
+                {
+                    currentState = ChestState.Closed;
+                }
+
+                if(currentState == ChestState.Closed && userInput == "lock")
+                {
+                    currentState = ChestState.Locked;
+                }
+            }
+           
         }
+
+        enum ChestState { Open, Closed, Locked }
 
     }
 
