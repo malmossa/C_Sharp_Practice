@@ -6,9 +6,9 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      /* The code below
-       will print the worlds Hello World to the screen*/
-      Console.WriteLine("Hello World!");
+
+    string greeting = "Hello World";
+    Console.WriteLine(greeting);
 
 
 
