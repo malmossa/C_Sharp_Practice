@@ -7,8 +7,14 @@ namespace ConsoleApp1
     static void Main(string[] args)
     {
 
-    string greeting = "Hello World";
-    Console.WriteLine(greeting);
+      Console.Write("Enter a number: ");
+      int number = Convert.ToInt32(Console.ReadLine());
+
+      Console.WriteLine(number.GetType());
+
+
+
+
 
 
 
