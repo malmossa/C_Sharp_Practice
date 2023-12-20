@@ -7,16 +7,9 @@ namespace ConsoleApp1
     static void Main(string[] args)
     {
 
-      Console.Write("Enter a number: ");
-      int number = Convert.ToInt32(Console.ReadLine());
+      string txt = "The character \\ is called backslash.";
 
-      Console.WriteLine(number.GetType());
-
-
-
-
-
-
+      Console.WriteLine(txt);
 
     }
   }
