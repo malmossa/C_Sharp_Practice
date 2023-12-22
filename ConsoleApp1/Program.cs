@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -6,13 +7,15 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      int i = 0;
+      int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
 
-      do
+      for (int i = 0; i < numbers.GetLength(0); i++)
       {
-        Console.WriteLine(i);
-        i++;
-      } while (i < 5);
+        for (int j = 0; j < numbers.GetLength(1); j++)
+        {
+          Console.WriteLine(numbers[i, j]);
+        }
+      }
 
     }
   }
