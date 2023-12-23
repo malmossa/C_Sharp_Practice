@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -7,15 +8,23 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+      DateTime date = DateTime.Now;
 
-      for (int i = 0; i < numbers.GetLength(0); i++)
-      {
-        for (int j = 0; j < numbers.GetLength(1); j++)
-        {
-          Console.WriteLine(numbers[i, j]);
-        }
-      }
+      DateTime tomorrow = date.AddDays(1);
+
+      Console.WriteLine(tomorrow);
+
+      // DateTime format
+      Console.WriteLine(date.ToLongDateString());
+      Console.WriteLine(date.ToShortDateString());
+      Console.WriteLine(date.ToLongTimeString());
+      Console.WriteLine(date.ToShortTimeString());
+
+      // Custom DateTime format
+      Console.WriteLine(date.ToString());
+      Console.WriteLine(date.ToString("yy-MM-dd"));
+
+
 
     }
   }
