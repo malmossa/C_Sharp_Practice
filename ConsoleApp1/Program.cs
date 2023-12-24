@@ -8,24 +8,22 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      DateTime date = DateTime.Now;
+      int myNum1 = PlusMethod(8, 5);
+      double myNum2 = PlusMethod(4.3, 6.26);
 
-      DateTime tomorrow = date.AddDays(1);
-
-      Console.WriteLine(tomorrow);
-
-      // DateTime format
-      Console.WriteLine(date.ToLongDateString());
-      Console.WriteLine(date.ToShortDateString());
-      Console.WriteLine(date.ToLongTimeString());
-      Console.WriteLine(date.ToShortTimeString());
-
-      // Custom DateTime format
-      Console.WriteLine(date.ToString());
-      Console.WriteLine(date.ToString("yy-MM-dd"));
-
-
-
+      Console.WriteLine("Int " + myNum1);
+      Console.WriteLine("Double " + myNum2);
     }
+
+    static int PlusMethod(int x, int y)
+    {
+      return x + y;
+    }
+
+    static double PlusMethod(double x, double y)
+    {
+      return x + y;
+    }
+
   }
 }
