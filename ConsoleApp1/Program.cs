@@ -8,32 +8,36 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      car car1 = new car();
-
-      Console.WriteLine(car1.brand);
-      Console.WriteLine(car1.modelName);
-      car1.honk();
-
+      DemoClass myObj = new DemoClass();
+      myObj.myMethod();
+      myObj.myOtherMethod();
     }
 
   }
 
+interface IFirstInterface
+{
+  void myMethod(); // interface method
+}
 
-  // Base class (Parent)
-  class Vehicle
-  {
-    public string brand = "Ford";
-    public void honk()
-    {
-      Console.WriteLine("Tuut, Tuut!");
-    }
-  }
+interface ISecondInterface
+{
+  void myOtherMethod(); // interface method
+}
 
-  // Derived class (Child)
-  class car : Vehicle
+// Implement multiple interfaces
+class DemoClass : IFirstInterface, ISecondInterface
+{
+  public void myMethod()
   {
-    public string modelName = "Mustang";
+    Console.WriteLine("Some text..");
   }
+  public void myOtherMethod()
+  {
+    Console.WriteLine("Some other text...");
+  }
+}
+
 
 
 }
