@@ -8,17 +8,31 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      Car myObj = new Car();
-      Console.WriteLine(myObj.color);
+      car car1 = new car();
+
+      Console.WriteLine(car1.brand);
+      Console.WriteLine(car1.modelName);
+      car1.honk();
+
     }
-
-
 
   }
 
-  class Car
+
+  // Base class (Parent)
+  class Vehicle
   {
-    public string color = "red";
+    public string brand = "Ford";
+    public void honk()
+    {
+      Console.WriteLine("Tuut, Tuut!");
+    }
+  }
+
+  // Derived class (Child)
+  class car : Vehicle
+  {
+    public string modelName = "Mustang";
   }
 
 
