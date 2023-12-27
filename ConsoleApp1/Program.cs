@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -8,35 +6,26 @@ namespace ConsoleApp1
   {
     static void Main(string[] args)
     {
-      DemoClass myObj = new DemoClass();
-      myObj.myMethod();
-      myObj.myOtherMethod();
+      checkAge(20);
+    }
+
+    static void checkAge(int age)
+    {
+      if (age < 18)
+      {
+        throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+      }
+      else
+      {
+        Console.WriteLine("Access granted - You are old enough!");
+      }
     }
 
   }
 
-interface IFirstInterface
-{
-  void myMethod(); // interface method
-}
 
-interface ISecondInterface
-{
-  void myOtherMethod(); // interface method
-}
 
-// Implement multiple interfaces
-class DemoClass : IFirstInterface, ISecondInterface
-{
-  public void myMethod()
-  {
-    Console.WriteLine("Some text..");
-  }
-  public void myOtherMethod()
-  {
-    Console.WriteLine("Some other text...");
-  }
-}
+
 
 
 
