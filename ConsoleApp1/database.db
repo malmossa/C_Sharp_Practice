@@ -1,0 +1,23 @@
+﻿SELECT * FROM customers LIMIT 20;
+
+SELECT * FROM customers LIMIT 20 OFFSET 40;
+
+SELECT MIN(price) FROM products;
+
+SELECT MAX(price) FROM products;
+
+SELECT MIN(price) AS lowset_price FROM products;
+
+SELECT COUNT(customer_id) FROM customers;
+
+SELECT COUNT(customer_id) FROM customers WHERE city = 'London';
+
+SELECT SUM(quantity) FROM order_details;
+
+SELECT AVG(price) FROM products;
+
+SELECT AVG(price) ::NUMERIC(10,2) FROM products;
+
+SELECT * FROM customers WHERE customer_name LIKE 'A%';
+
+SELECT * FROM customers WHERE customer_name LIKE '%A%';
