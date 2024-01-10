@@ -1,2 +1,7 @@
-﻿SELECT testproduct_id, product_name, category_name  from testproducts
-LEFT JOIN categories ON testproducts.category_id = categories.category_id;
+﻿SELECT COUNT(customer_id), country FROM customers GROUP BY country
+HAVING COUNT(customer_id) > 5;
+
+SELECT order_details.order_id, SUM(products.price) FROM order_details
+LEFT JOIN products ON order_details.product_id = products.product_id
+GROUP BY order_id
+HAVING SUM(products.price) > 400.00;
